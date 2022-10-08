@@ -1,0 +1,16 @@
+  const takingData = await infoApi.data.data.results.map((info) => {
+    return {
+      id: info.id,
+      name: info.name,
+      description: info.description,
+      thumbnail: info.thumbnail
+    }
+  })
+
+  for (let i = 0; i < takingData.length; i++) {
+    const sendCharacters = new CharactersDb({
+      takingData
+    })
+    sendCharacters.save()
+  }
+}

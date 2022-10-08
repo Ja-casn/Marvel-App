@@ -1,0 +1,65 @@
+.paginated {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.selectedButton {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 0px 0px;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    min-width: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    /* background: #0f0c29; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.prevNextButtons {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 0px 0px;
+    align-items: center;
+    min-width: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    /* background: #fff; */
+    cursor: pointer;
+}
+
+.prevNextButtonsOff {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 0px 0px;
+    align-items: center;
+    min-width: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.prevNextParaph {
+    color: #fff;
+}
+
+/* color: #093637; */
+
+/* .prevNextParaphOff {
+
+} */

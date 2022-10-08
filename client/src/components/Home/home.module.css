@@ -1,0 +1,7 @@
+.cardsCharacters{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 18rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 5fr));
+    margin: 30px 100px 0px 100px;
+}
