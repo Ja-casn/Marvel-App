@@ -33,8 +33,8 @@ export const CardsPagination = ({ currentPage, setCurrentPage, cardsPerPage, cha
 
             {numberOfPages?.map((number) => {
                 return <button
-                className={styles.selectedButton}
-                    // className={number === currentPage ? styles.selectedButton : styles.prevNextButtonsOff}
+                // className={styles.selectedButton}
+                    className={number === currentPage ? styles.selectedButtonOff : styles.selectedButton}
                     key={number}
                     onClick={() => paginated(number)} >
                     <p className={styles.prevNextParaph} >{number}</p>

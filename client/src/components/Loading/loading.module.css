@@ -1,0 +1,54 @@
+.ldsGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .ldsGrid div {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    animation: ldsGrid 1.2s linear infinite;
+    margin: 3px;
+  }
+  .ldsGrid div:nth-child(1) {
+    background-color: blue;
+    animation-delay: 0.1s;
+  }
+  .ldsGrid div:nth-child(2) {
+    background-color: yellow;
+    animation-delay: 0.2s;
+  }
+  .ldsGrid div:nth-child(3) {
+    background-color: orange;
+    animation-delay: 0.3s;
+  }
+  .ldsGrid div:nth-child(4) {
+    background-color: purple;
+    animation-delay: 0.4s;
+  }
+  .ldsGrid div:nth-child(5) {
+    background-color: red;
+    animation-delay: 0.5s;
+  }
+  .ldsGrid div:nth-child(6) {
+    background-color: green;
+    animation-delay: 0.6s;
+  }
+  .ldsGrid div:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  .ldsGrid div:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+  .ldsGrid div:nth-child(9) {
+    animation-delay: 0.9s;
+  }
+  @keyframes ldsGrid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }

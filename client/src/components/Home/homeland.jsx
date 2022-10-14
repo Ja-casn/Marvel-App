@@ -4,6 +4,8 @@ import styles from './home.module.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { allCharacters } from '../../actions/action-types'
 import { CardsPagination } from '../Pagination/Pagination'
+import { AllNavBar } from '../Navbar/Navbar'
+import { Loading } from '../Loading/Loading'
 
 
 
@@ -26,9 +28,11 @@ export const Homeland = ({ paginated }) => {
   }, [dispatch, paginated])
 
 
-  return (
+  return characters.length > 0 && characters !== undefined ?(
+    <>
+      <AllNavBar />
     <div className={styles.mainHome}>
-
+      
       <div className={styles.cardsCharacters}>
         {cardsPage.map((info, key) => {
           return (
@@ -51,6 +55,7 @@ export const Homeland = ({ paginated }) => {
       />
 
     </div>
-  )
+    </>
+  ) : <Loading />
 }
 

@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className='appMain'>
       <Routes>
-        <Route exact path='/marv1/home' element={<Homeland  />} />
+        <Route exact path='/marv1/characters' element={<Homeland  />} />
       </Routes>
     </div>
   )
